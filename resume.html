@@ -40,6 +40,14 @@
     strong:hover {
         color: red; /* Change the color to red on mouseover */
     }
+    /* Dark mode styles */
+    body.dark {
+      background-color: #333;
+      color: #eee;
+    }
+    body.dark a {
+      color: #8cf;
+    }
       </style>
   <title>
 </body>
@@ -53,6 +61,7 @@
     <p>904.572.4847 | <a href="mailto:cjosephs@gmail.com">cjosephs@gmail.com</a> | <a href="https://www.linkedin.com/in/charlesjosephs/">linkedin</a></p>
     <p>Passionate <strong>functional programmer</strong> and <strong>programming mentor</strong> with expertise in <strong>Scala</strong>, <strong>C#</strong>, and <strong>JavaScript</strong>. Over 15 years experience architecting high-performance applications and mentoring teams.</p>
 
+    <hr/>
     <h3>Skills Profile</h3>
     <ul>
       <li><strong>C#</strong> (.NET, ASP.NET MVC, ASP.NET Core)</li>
@@ -64,6 +73,7 @@
       <li><strong>AI tools</strong> (Claude.ai, ChatGPT)</li>
     </ul>
 
+    <hr/>
     <h3>Professional Experience</h3>
     <h4>Lead Developer / Architect (2020 - Present)</h4>
     <p><em>Ballista Technology Group</em></p>
@@ -95,8 +105,16 @@
       <li>Architected adoption of code reviews, CI/CD, and unit testing.</li>
     </ul>
 
+    <hr/>
     <p><em>References available upon request.</em></p>
-
+    <hr/>
+    <p><a href="#" onclick="toggleDarkMode()">Toggle dark mode</a></p>
+  
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark'); 
+      }
+    </script>
 </body>
 
 </html>
